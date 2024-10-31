@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* shared styles */
+:root{
+  --bg-color: #fff;
+  /* --navbar-bg: #f6f6f6bf; */
+  --navbar-bg: #f0f0f0;
+  --text-color: #000;
+  --footer-bg: #24262b;
+  --btn-color: #fff;
+  --btn-color-hover: #000;
+  --accent-color: rgb(14, 154, 28);
+  --hover-color: rgb(183, 182, 182);
+  --cta-color: #bdb7b7;
+}
+
+.a{
+  text-decoration: none;
+  color: var(--text-color);
+}

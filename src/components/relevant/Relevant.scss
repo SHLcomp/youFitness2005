@@ -1,0 +1,18 @@
+.rel-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 1cm;  
+}
+
+//responsive
+@media (max-width: 414px) {
+  .rel-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 5cm;
+    margin-top: 4.5cm;
+    padding-bottom: 2cm;
+  }
+}

@@ -1,0 +1,77 @@
+.container2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: right;
+  flex-wrap: wrap;
+  padding-bottom: 2cm;
+  padding-top: 1cm;
+  padding-left: 2cm;
+  border-top: 1px solid;
+  .rev-count{
+    h3{
+      font-size: 1.5em;
+      color: var(--text-color);
+      position: relative; //added this so the ::before will work
+      &::before{
+        content: "";
+        position: absolute; //also added this so the sude element work
+        left: 0;
+        bottom: -10px; 
+        background-color: #e91e63;
+        height: 3px;
+        box-sizing: border-box;
+        width: 20%;
+    }
+    }
+  }
+  .reviews{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    .review{
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex-wrap: wrap;
+      width: 50%;
+      align-self: first baseline;
+      padding-inline: 10px;
+      padding-block: 10px;
+      border: 1px solid var(--navbar-bg);
+      box-shadow: 2px 2px 9px;
+      cursor: pointer;
+
+      .info{
+        p{
+          font-size: 10px;
+        }
+      }
+      .text{
+        word-wrap: break-word;
+        word-break: keep-all;
+      }
+    }
+  }
+}
+
+//responisve
+@media (max-width:360px) {
+  .review{
+    width: 100% !important;
+  }
+  .container2{
+    padding-left: 0px !important;
+    width: 95% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-left: 10px;
+  }
+  h3::before{
+    content: "";
+    width: 100% !important;
+  }
+}

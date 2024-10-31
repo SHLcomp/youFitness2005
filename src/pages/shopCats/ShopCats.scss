@@ -1,0 +1,64 @@
+.container{
+  margin-top: 2cm;
+  .filter{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 1cm;
+    padding-top: 20px;
+    width: 20%;
+    float: left;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-color: var(--navbar-bg);
+    .type{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        li{
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+
+  .shop2{
+    display: flex;
+    gap: 20px;
+    padding: 0 30px;
+    padding-bottom: 3cm;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+  }
+}
+
+
+//responsive
+@media only screen and (max-width: 768px) {
+  .container{
+    padding-bottom: 3cm;
+  }
+  .shop2{
+    width: 70% !important;
+    gap: 1px 70px !important;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container{
+    padding-bottom: 3cm;
+  }
+  .shop2{
+    width: 100% !important;
+    gap: 1px 70px !important;
+  }
+}

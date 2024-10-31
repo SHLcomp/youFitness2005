@@ -1,0 +1,18 @@
+.shopAll{
+  margin-top: 2cm;
+}
+.shop{
+  display: flex;
+  gap: 20px;
+  padding: 0 30px;
+  padding-bottom: 3cm;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+//responsive
+@media (max-width: 768px) {
+  .shopAll{
+    margin-top: 5.5cm;
+  }
+}

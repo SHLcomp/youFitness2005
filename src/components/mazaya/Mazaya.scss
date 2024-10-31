@@ -1,0 +1,112 @@
+.con{
+  padding-bottom: 3cm;
+  .mazaya{
+    background-color: var(--navbar-bg);
+    padding: 70px 0; //padding block
+    margin-top: -4.5cm;
+    .boxes{
+      display: flex; 
+      gap: 20px;
+      padding: 0px 20px; //padding inline
+      .box-img{
+        opacity: .25;
+      }
+  
+      .box-text{
+        margin-top: -4.5cm;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        font-weight: 700;
+        z-index: 500;
+        i{
+          font-size: 2rem;
+          padding-bottom: 10px;
+        }
+    }
+    }
+  }
+}
+
+
+
+//responsive
+@media (max-width: 768px) {
+  .mazaya{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    .boxes{
+      flex-wrap: wrap;
+      gap: 20px !important;
+      width: 90%;
+      .cat-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px !important;
+        position: relative;
+        width: 100%;
+        .box-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          overflow: hidden;
+          img{
+            width: 400px;
+          }
+        }
+        .box-text{
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 80%;
+          left: 20%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 414px) {
+  .mazaya{
+    .boxes{
+      flex-wrap: wrap;
+      gap: 20px !important;
+      width: 90%;
+      .cat-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 100px !important;
+        position: relative;
+        width: 100%;
+        .box-img{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          overflow: hidden;
+          img{
+            width: 400px;
+          }
+        }
+        .box-text{
+          width: 70%;
+          text-align: center;
+          position: absolute;
+          top: 85%;
+          left: 15%;
+        }
+      }
+    }
+  }
+}
