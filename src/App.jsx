@@ -11,39 +11,39 @@ import Provider from './context/Context.jsx';
 // vite project yaay
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: 'youFitness2005/',
     element: <Home />,
     errorElement: <Error />
   },
   {
-    path: '/womens',
+    path: '/youFitness2005/womens',
     element: <ShopCats category= "womens" />
   },
   {
-    path: '/mens',
+    path: '/youFitness2005/mens',
     element: <ShopCats category= "mens" />
   },
   {
-    path: '/kids',
+    path: '/youFitness2005/kids',
     element: <ShopCats category= "kids" />
   },
   {
-    path: '/shopAll',
+    path: '/youFitness2005/shopAll',
     element: <ShopAll />
   },
   {
-    path: '/product/:productId',
+    path: '/youFitness2005/product/:productId',
     element: <Filter /> //will display the productDisplay, filtered by id
   },
   {
-    path: '/cart',
+    path: '/youFitness2005/cart',
     element: <Cart />
   }
 ]);
 function App() {
   return (
     <>
-    <Provider>
+    <Provider basename={"youFitness2005/"}>
     <RouterProvider router={router} />
     </Provider>
     </>

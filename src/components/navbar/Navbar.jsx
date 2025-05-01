@@ -23,16 +23,17 @@ const Navbar = () => {
         <nav className="navbar">
             <ul>
               <div className="main-navs">
-                <Link to="/"><img className="nav-icons logo-image" src={logo}/></Link>
+                {/* make sure to link the home page to "/home-url" not "home-url/" */}
+                <Link to="/youFitness2005"><img className="nav-icons logo-image" src={logo}/></Link>
                 <i id='burg' className="fa-solid fa-bars" onClick={()=>openBurg()}></i>
               </div>
-                <Link to="/" className='a'><li className="nav-icons">Home</li></Link>
-                <Link to="/womens" className='a'><li className="nav-icons">Women&apos;s</li></Link>
-                <Link to="/mens" className='a'><li className="nav-icons">Men&apos;s</li></Link>
-                <Link to="/kids" className='a'><li className="nav-icons">Kid&apos;s</li></Link>
-                <Link to="/shopAll" className='a'><li className="nav-icons">All Categories</li></Link>
-                <Link to="/contact" className='a'><li className="nav-icons">Contact Us</li></Link>
-                <Link to="/about" className='a'><li className="nav-icons">About Us</li></Link>
+                <Link to="/youFitness2005" className='a'><li className="nav-icons">Home</li></Link>
+                <Link to="/youFitness2005/womens" className='a'><li className="nav-icons">Women&apos;s</li></Link>
+                <Link to="/youFitness2005/mens" className='a'><li className="nav-icons">Men&apos;s</li></Link>
+                <Link to="/youFitness2005/kids" className='a'><li className="nav-icons">Kid&apos;s</li></Link>
+                <Link to="/youFitness2005/shopAll" className='a'><li className="nav-icons">All Categories</li></Link>
+                <Link to="/youFitness2005/contact" className='a'><li className="nav-icons">Contact Us</li></Link>
+                <Link to="/youFitness2005/about" className='a'><li className="nav-icons">About Us</li></Link>
             </ul>
             
             
