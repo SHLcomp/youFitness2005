@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="other-uls">
         <ul>
             <li className="link"><i className="fa-solid fa-magnifying-glass"></i></li>
-            <Link to="/cart" className='a'><li className="link"  ><i id="cartCount" className="fa-sharp fa-solid fa-bag-shopping">({cartCount})</i></li></Link>
+            <Link to="/youFitness2005/cart" className='a'><li className="link"  ><i id="cartCount" className="fa-sharp fa-solid fa-bag-shopping">({cartCount})</i></li></Link>
           
         </ul>
         </div>
