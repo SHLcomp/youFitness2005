@@ -11,7 +11,7 @@ const Product = (item) => {
             {/* html structure  */}
             <div className="product">
             <div className="product-img">
-              <Link to={`/product/${item.id}`} ><img onClick={window.scrollTo(0,0)} src={item.image} alt={item.name} /></Link>
+              <Link to={`/youFitness2005/product/${item.id}`} ><img onClick={window.scrollTo(0,0)} src={item.image} alt={item.name} /></Link>
             </div>
             <div className="product-info">
               <h3>{item.name}</h3>
