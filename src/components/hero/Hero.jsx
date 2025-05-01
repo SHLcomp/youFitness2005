@@ -17,14 +17,14 @@ const Hero = () => {
         <div className="women">
           <img src={womenImg} alt="women's shopping" />
           <div className="info">
-            <Link to="/womens"><button>Shop for Women&apos;s</button></Link>
+            <Link to="/youFitness2005/womens"><button>Shop for Women&apos;s</button></Link>
           </div>
         </div>
 
         <div className="men">
           <img src={menImg} alt="men's shopping" />
           <div className="info">
-            <Link to="/mens"><button>Shop for Men&apos;s</button></Link>
+            <Link to="/youFitness2005/mens"><button>Shop for Men&apos;s</button></Link>
           </div>
         </div>
 
